@@ -38,7 +38,12 @@ const UserDirectory = () => {
         <h2>Directorio de Usuarios</h2>
         
         {/* 1. Si está cargando, muestra un mensaje */}
-        {loading && <p>Cargando los usuarios</p>}
+        {loading && (
+            <div className="loading">
+                <div className="spinner"></div>
+                <p>Cargando usuarios...</p>
+            </div>
+        )}
 
         {/* 2. Si hay un error, muestra un mensaje */}
         {error && <p className="error-message">Error: {error}</p>}

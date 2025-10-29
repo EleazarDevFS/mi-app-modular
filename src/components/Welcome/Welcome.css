@@ -1,0 +1,127 @@
+.welcome-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: 1px solid rgba(8, 145, 178, 0.15);
+  box-shadow: 0 20px 60px rgba(8, 145, 178, 0.15);
+  animation: welcomeAnimation 0.8s ease-out;
+}
+
+@keyframes welcomeAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.welcome-container h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #0891b2, #06b6d4, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.welcome-container h2::after {
+  content: '👋';
+  position: absolute;
+  right: -50px;
+  top: -10px;
+  font-size: 2rem;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+}
+
+.welcome-container p {
+  font-size: 1.3rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Modo Oscuro - Welcome */
+.App.dark .welcome-container {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(148, 163, 184, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.App.dark .welcome-container h2 {
+  background: linear-gradient(135deg, #22d3ee, #06b6d4, #67e8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.App.dark .welcome-container p {
+  color: #cbd5e1;
+}
+
+.welcome-badge {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #0891b2, #06b6d4);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 20px rgba(8, 145, 178, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(8, 145, 178, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(8, 145, 178, 0.4);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welcome-container {
+    margin: 40px 20px;
+    padding: 40px 25px;
+  }
+  
+  .welcome-container h2 {
+    font-size: 2rem;
+  }
+  
+  .welcome-container h2::after {
+    right: -40px;
+    font-size: 1.5rem;
+  }
+  
+  .welcome-container p {
+    font-size: 1.1rem;
+  }
+}
