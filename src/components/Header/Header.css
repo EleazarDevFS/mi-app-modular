@@ -1,5 +1,17 @@
+.image-logo{
+  border-radius: 50%;
+  width: 70px;
+  border: dotted 4px;
+}
+
+.image-logo:hover{
+  transform:translateY(-2px);
+  box-shadow: 0 10px  10px 0  rgba(0, 0, 0, .5);
+
+}
+
 .app-header {
-  background-color: #421963;
+  background-color: #0891b2;
   padding: 20px;
   color: white;
   text-align: center;
@@ -35,5 +47,5 @@ nav a { /* <Link> se renderiza como una <a>, así que podemos estilizarla */
 }
 
 nav a:hover {
-  border-bottom-color: #61dafb; /* Color azul de React */
+  border-bottom-color: #22d3ee; /* Color turquesa cyan */
 }

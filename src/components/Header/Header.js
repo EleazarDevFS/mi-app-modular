@@ -8,7 +8,8 @@ const Header = ({ themeSwitcher }) => {
     <header className="app-header">
       <div className="logo-nav">
         <Link to="/" className="logo">
-          <Logo className="logo-icon" />
+          {/* <Logo className="logo-icon" /> */}
+          <img src='logotipo2.png' className='image-logo'/>
         </Link>
         <nav>
           {/* Usamos <Link> en lugar de <a href=""> */}

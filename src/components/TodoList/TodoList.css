@@ -2,7 +2,7 @@
   margin: 20px auto;
   padding: 20px;
   max-width: 500px;
-  background-color: #8d69af;
+  background:linear-gradient(#ee695f, #92e2c9, #dc2626);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -22,7 +22,7 @@
 .add-task-form button {
   padding: 10px 15px;
   border: none;
-  background-color: #4c286d;
+  background-color: #0891b2;
   color: white;
   border-radius: 4px;
   margin-left: 10px;
@@ -80,19 +80,19 @@
 }
 
 .complete-btn {
-  background-color: #28a745;
+  background-color: #10b981;
   color: white;
 }
 
 .complete-btn:hover {
-  background-color: #218838;
+  background-color: #059669;
 }
 
 .delete-btn {
-  background-color: #dc3545;
+  background-color: #ef4444;
   color: white;
 }
 
 .delete-btn:hover {
-  background-color: #c82333;
+  background-color: #dc2626;
 }

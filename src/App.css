@@ -1,42 +1,42 @@
 .App {
   text-align: center;
-  background-color: #ffffff; /* Modo Claro por defecto */
-  color: #282c34;
+  background-color: #f0f9ff; /* Modo Claro por defecto - azul muy claro */
+  color: #1e293b;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Estilos del Modo Oscuro */
 .App.dark {
-  background-color: #282c34;
-  color: #ffffff;
+  background-color: #0f172a;
+  color: #f1f5f9;
 }
 
 /* Puedes hacer lo mismo para otros componentes */
 .App.dark .app-header {
-  background-color: #20232a;
+  background-color: #1e293b;
 }
 
 .App.dark .user-card {
-  background-color: #3a3f4b;
-  border-color: #555;
+  background-color: #1e293b;
+  border-color: #334155;
 }
 
 .App.dark .user-card h3 {
-  color: #f1f1f1;
+  color: #e2e8f0;
 }
 
 .App.dark .todo-list-container {
-  background-color: #3a3f4b;
+  background-color: #1e293b;
 }
 
 .App.dark .todo-list-container li {
-  background-color: #424650;
-  border-color: #555;
+  background-color: #334155;
+  border-color: #475569;
 }
 
 .App.dark .task-text {
-  color: #f1f1f1;
+  color: #e2e8f0;
 }
 
 .theme-switcher {
@@ -71,7 +71,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #06b6d4;
 }
 
 @keyframes App-logo-spin {

@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 1rem;
-    background: #f7f8fb;
-    color: #1f2937;
+    background: #f0f9ff;
+    color: #0f172a;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     box-sizing: border-box;
 }
@@ -19,7 +19,7 @@
     padding: 2rem;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(20, 24, 40, 0.06);
+    box-shadow: 0 6px 24px rgba(8, 145, 178, 0.15);
 }
 
 .notfound__code {
@@ -27,7 +27,7 @@
     line-height: 1;
     margin: 0;
     font-weight: 800;
-    color: #e11d48; /* accent for 404 */
+    color: #0891b2; /* accent for 404 */
 }
 
 .notfound__title {
@@ -71,9 +71,9 @@
 
 /* Primary button (Go back) */
 .notfound__btn {
-    background: #2563eb;
+    background: #0891b2;
     color: #fff;
-    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.12);
+    box-shadow: 0 6px 18px rgba(8, 145, 178, 0.2);
 }
 
 .notfound__btn:hover {
@@ -88,18 +88,18 @@
 /* Link styled as secondary action (Go to Home) */
 .notfound__link {
     background: transparent;
-    color: #2563eb;
-    border: 1px solid rgba(37, 99, 235, 0.12);
+    color: #0891b2;
+    border: 1px solid rgba(8, 145, 178, 0.2);
 }
 
 .notfound__link:hover {
-    background: rgba(37, 99, 235, 0.04);
+    background: rgba(8, 145, 178, 0.08);
 }
 
 /* Focus states for accessibility */
 .notfound__btn:focus,
 .notfound__link:focus {
-    outline: 3px solid rgba(37, 99, 235, 0.18);
+    outline: 3px solid rgba(8, 145, 178, 0.3);
     outline-offset: 3px;
 }
 
