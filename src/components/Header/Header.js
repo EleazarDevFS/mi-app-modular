@@ -9,7 +9,7 @@ const Header = ({ themeSwitcher }) => {
         <Link to="/" className="logo">
           <img src='logotipo2.png' alt="Logo" className='image-logo'/>
         </Link>
-        <nav>
+        <nav className='center-head-text'>
           {/* Usamos <Link> en lugar de <a href=""> */}
           <Link to="/">Inicio</Link>
           <Link to="/tareas">Tareas</Link>
